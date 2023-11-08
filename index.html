@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script defer src="main.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="header-logo"><img src="./Assets/header-logo.svg" alt="logo"></div>
+        <div class="header-title"><img src="./Assets/header-title.svg" alt="title"></div>
+    </header>
+
+    <main>
+        <div class="main-title">Publish your podcasts <span>everywhere.</span></div>
+
+        <div class="main-text">Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!</div>
+        
+        <div class="main-logos">
+            <div class="logo1"><img src="./Assets/main-logo1.svg" alt="1"></div>
+            <div class="logo2"><img src="./Assets/main-logo2.svg" alt="2"></div>
+            <div class="logo3"><img src="./Assets/main-logo4.svg" alt="3"></div>
+            <div class="logo4"><img src="./Assets/main-logo3.svg" alt="4"></div>
+        </div>
+
+        
+        <form onsubmit="return checkEmail()"> 
+            <input class="email-input" placeholder="Email address" value="" name="email" type="email novalidate" id="email-field" spellcheck="false">
+            <button type="submit" id="button-submit" onclick="checkEmail()"><h3>Request Access</h3></button>
+            <p class="error-message" id="error-message">Oops! Please check your email</p>
+        </form>
+        </main>
+
+        <script defer src="main.js"></script>
+</body>
+</html>
