@@ -5,8 +5,21 @@
     box-sizing: border-box;
 }
 
+.responsive-media{
+    display: flex;
+    flex-direction: row;
+    margin-top: 64px;
+    column-gap: 37px;
+    display: none;
+}
+
+.responsive-dots,.back-image-tablet,.back-image-laptop{
+    display: none;
+}
+
 body{
     background-image: url(./Assets/back-image-mobile.svg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: #121725;
     height: 100vh;
